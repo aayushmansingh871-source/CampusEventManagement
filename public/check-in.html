@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event check-in · Campus</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="checkin-page">
+  <main class="checkin-card">
+    <a class="brand" href="/"><span class="brand-mark">c<span>.</span></span><span class="brand-name">campus<span>event portal</span></span></a>
+    <div class="eyebrow section-eyebrow">YOU’RE IN THE RIGHT PLACE</div>
+    <h1>Event check-in</h1>
+    <p>Choose your student account to record your attendance.</p>
+    <form id="checkin-form">
+      <label>Student<select id="checkin-student" required></select></label>
+      <button class="primary-button" type="submit">Check in <span>↗</span></button>
+    </form>
+    <div id="checkin-message" class="notice" role="status" hidden></div>
+    <a class="back-link" href="/">← Back to campus events</a>
+  </main>
+  <script src="./check-in.js" defer></script>
+</body>
+</html>
